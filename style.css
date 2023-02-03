@@ -20,4 +20,10 @@ body {
     text-decoration: none;
     color: blue;
   }
-  
+
+  @media (max-width: 767px) {
+  .sns-link {
+    text-align: left;
+    margin: 10px 0;
+  }
+}
