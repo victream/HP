@@ -1,0 +1,331 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('victream.png');
+}
+
+nav ul {
+  display: flex
+  justify-content: center;
+}
+
+nav li {
+margin: 0 10px;
+}
+
+nav a {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.hero {
+text-align: center;
+margin-top: 50px;
+background-color: #333;
+opacity: 0.7;
+padding: 20px;
+}
+
+.hero h1 {
+font-size: 4rem;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 1.5rem;
+margin-bottom: 40px;
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #fff;
+color: #333;
+font-size: 1.2rem;
+border-radius: 5px;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+}
+
+.btn:hover {
+background-color: #333;
+color: #fff;
+}
+
+/* Services */
+
+.services {
+background-color: #f2f2f2;
+padding: 50px 0;
+}
+
+.services h2 {
+text-align: center;
+font-size: 3rem;
+margin-bottom: 50px;
+}
+
+.services ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.services li {
+text-align: center;
+margin: 0 40px;
+width: 30%;
+}
+
+.services i {
+font-size: 3rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+.services h3 {
+font-size: 2rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+.services p {
+font-size: 1.2rem;
+color: #666;
+line-height: 1.5;
+}
+
+/* Testimonials */
+
+.testimonials {
+background-color: #fff;
+padding: 50px 0;
+}
+
+.testimonials h2 {
+text-align: center;
+font-size: 3rem;
+margin-bottom: 50px;
+}
+
+.testimonial {
+text-align: center;
+margin: 0 auto;
+max-width: 600px;
+margin-bottom: 50px;
+}
+
+.testimonial p {
+font-size: 1.5rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+.testimonial cite {
+font-size: 1.2rem;
+font-weight: bold;
+color: #666;
+}
+
+.testimonial cite:before {
+content: "-";
+margin-right: 5px;
+}
+
+/* Footer */
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+
+footer p {
+font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+header {
+height: auto;
+}
+
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 10px;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+
+.btn {
+font-size: 1rem;
+}
+
+.services h2 {
+font-size: 2.5rem;
+margin-bottom: 30px;
+}
+
+.services li {
+margin: 0 20px;
+}
+
+.services i {
+font-size: 2rem;
+}
+
+.services h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.services p {
+font-size: 1rem;}
+
+@media (max-width: 575px) {
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.hero p {
+font-size: 1rem;
+margin-bottom: 20px;
+}
+
+.btn {
+font-size: 0.8rem;
+padding: 8px 15px;
+}
+
+.services ul {
+flex-direction: column;
+}
+
+.services li {
+margin: 20px 0;
+}
+
+.services i {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.services h3 {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.services p {
+font-size: 0.9rem;
+}
+
+.testimonial p {
+font-size: 1.2rem;
+}
+
+.testimonial cite {
+font-size: 1rem;
+}
+}
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+    
